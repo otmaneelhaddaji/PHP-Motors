@@ -1,0 +1,2 @@
+The SQL file for my database is in the sql folder. It is called "final-project-database.sql".
+Thank you for your feedback!
