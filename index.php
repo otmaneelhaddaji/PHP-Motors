@@ -40,7 +40,7 @@ $action = filter_input(INPUT_POST, 'action');
 
 
   case 'template':
-    include 'view/template.php';
+    include 'view/admin.php';
   
   break;
  
