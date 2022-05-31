@@ -7,14 +7,20 @@
     require_once 'model/main-model.php';
 
     require_once 'library/functions.php';
-
+ 
     //Create or access a session
     session_start();
 
     //Get array of classifications
     $classifications = getClassifications();
+   session_start();
 
     $navList = createNav($classifications);
+    if(isset($_SESSION['loggedin'])){
+        $loggedin = $_SESSION['loggedin'];
+    } else {
+        $loggedin = false;
+    }
 
     // $action is used to store the type of content being requested. 
     // filter_input() is used to eliminate harmful code.
